@@ -33,23 +33,29 @@ This framework is designed to be **scalable, reusable, and CI/CD-ready**, making
 
 ---
 
+## 🔹 Project Structure
+```
 selenium-java-framework/
+│
 ├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ ├── components/ # Base classes, reusable helpers
-│ │ │ └── pageobjects/ # Page Object Models
-│ │ └── resources/ # Configuration files
-│ └── test/
-│ ├── java/
-│ │ └── tests/ # Test scripts organized by feature
-│ └── resources/ # Test data (CSV, YAML, JSON)
-├── reports/ # TestNG / HTML reports
-├── pom.xml # Maven dependencies
-├── README.md
-└── .gitignore
-
-
+│   ├── main/java/
+│   │   ├── components/        # Reusable helper classes
+│   │   └── pageobjects/       # Page Object Model classes
+│   │
+│   └── test/java/
+│       └── tests/             # Test cases
+│
+├── testSuites/                # TestNG XML suites
+│
+├── reports/                   # Test reports (auto-generated)
+│
+├── test-output/               # TestNG output (auto-generated)
+│
+├── pom.xml                    # Maven dependencies
+├── data.properties            # Test configuration
+├── data.xlsx                  # Test data
+└── README.md                  # Documentation
+```
 ---
 
 ## 🔹 How to Run
