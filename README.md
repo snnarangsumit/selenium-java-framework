@@ -1,5 +1,11 @@
 # Selenium Java Framework
 
+![Java](https://img.shields.io/badge/Java-17%2B-orange?style=for-the-badge&logo=java)
+![Selenium](https://img.shields.io/badge/Selenium-4.x-green?style=for-the-badge&logo=selenium)
+![TestNG](https://img.shields.io/badge/TestNG-7.x-red?style=for-the-badge)
+![Maven](https://img.shields.io/badge/Maven-3.x-blue?style=for-the-badge&logo=apache-maven)
+
+
 ## 🔹 Overview
 A **modern Selenium Java framework** for UI automation using **TestNG** and **Page Object Model (POM)** design.  
 This framework is designed to be **scalable, reusable, and CI/CD-ready**, making it ideal for showcasing in interviews or as a professional portfolio.
@@ -27,23 +33,29 @@ This framework is designed to be **scalable, reusable, and CI/CD-ready**, making
 
 ---
 
+## 🔹 Project Structure
+```
 selenium-java-framework/
+│
 ├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ ├── components/ # Base classes, reusable helpers
-│ │ │ └── pageobjects/ # Page Object Models
-│ │ └── resources/ # Configuration files
-│ └── test/
-│ ├── java/
-│ │ └── tests/ # Test scripts organized by feature
-│ └── resources/ # Test data (CSV, YAML, JSON)
-├── reports/ # TestNG / HTML reports
-├── pom.xml # Maven dependencies
-├── README.md
-└── .gitignore
-
-
+│   ├── main/java/
+│   │   ├── components/        # Reusable helper classes
+│   │   └── pageobjects/       # Page Object Model classes
+│   │
+│   └── test/java/
+│       └── tests/             # Test cases
+│
+├── testSuites/                # TestNG XML suites
+│
+├── reports/                   # Test reports (auto-generated)
+│
+├── test-output/               # TestNG output (auto-generated)
+│
+├── pom.xml                    # Maven dependencies
+├── data.properties            # Test configuration
+├── data.xlsx                  # Test data
+└── README.md                  # Documentation
+```
 ---
 
 ## 🔹 How to Run
